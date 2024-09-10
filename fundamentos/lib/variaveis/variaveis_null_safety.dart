@@ -7,13 +7,16 @@ void main() {
 
   // variáveis non-nullable
   String nomeCompletoSemAtribuicao;
+  // print(nomeCompletoSemAtribuicao);
   nomeCompletoSemAtribuicao = "Fundamentos do Dart";
 
-  String nomeCompletoComAtribuicao = null;
-  nomeCompletoComAtribuicao = "Fundamentos do Dart";
+  // String nomeCompletoComAtribuicao = null;
+  // nomeCompletoComAtribuicao = "Fundamentos do Dart";
+  String nomeCompletoComAtribuicao = "Fundamentos do Dart";
 
   // variável nullable
   String? nomeCompletoComAtribuicaoNullAble = null;
+  print(nomeCompletoComAtribuicaoNullAble);
  
 
 
