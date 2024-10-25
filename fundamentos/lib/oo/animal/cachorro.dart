@@ -1,13 +1,14 @@
 import 'animal.dart';
 import 'alimento.dart';
 import 'brinquedo.dart';
+import 'especie.dart';
 
 class Cachorro extends Animal {
   int fofura;
   List<Brinquedo> brinquedos;
   Cachorro(String nome, double peso, this.fofura, Alimento alimento)
       : brinquedos = [],
-        super(nome, peso, alimento);
+        super(nome, peso, alimento, Especie.MAMIFERO);
 
   void incluirBrinquedo(Brinquedo brinquedo) {
     brinquedos.add(brinquedo);
@@ -30,6 +31,6 @@ class Cachorro extends Animal {
 
   @override
   String toString() {
-    return 'Cachorro | Nome: $nome; Peso: $peso; Fofura: $fofura';
+    return 'Cachorro | Nome: $nome; Peso: $peso; Fofura: $fofura; Espécie: ${especie.name}';
   }
 }
