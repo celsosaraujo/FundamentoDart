@@ -3,6 +3,7 @@ import 'com_parametros.dart' as com_parametro;
 import 'inicializacao_formal.dart' as inic_formal;
 import 'opcional_posicional.dart' as op_posicional;
 import 'opcional_nomeado.dart' as op_nomeado;
+import 'obrigatorio_nomeado.dart' as ob_nomeado;
 
 void main(List<String> args) {
   //Construtor Padrão
@@ -40,11 +41,19 @@ void main(List<String> args) {
   final carroGTR5 = op_nomeado.Carro("Nissan 5","GTR");
   carroGTR5.imprimeDados();
 
-  final carroGTR6 = op_nomeado.Carro("Nissan 5","GTR", 
+  final carroGTR6 = op_nomeado.Carro("Nissan 6","GTR", 
                                     //  anoFabricacao: 2013, 
                                      anoModelo: 2012,
                                     //  temABS: false
                                     );
   carroGTR6.imprimeDados();
+
+  final carroGTR7 = ob_nomeado.Carro(fabricante: "Nissan 7",
+                                     modelo: "GTR", 
+                                     anoFabricacao: 2013, 
+                                     anoModelo: 2012,
+                                     temABS: false
+                                    );
+  carroGTR7.imprimeDados();
 
 }
