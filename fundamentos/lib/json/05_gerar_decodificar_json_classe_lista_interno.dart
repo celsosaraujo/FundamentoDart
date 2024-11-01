@@ -59,12 +59,12 @@ void main() {
   print('E-mail: ${usuario.emails.join(', ')}');         
 
   // Exibir os detalhes do usuário
-  print('''${usuario.nome}, 
-           Idade: ${usuario.idade}, 
-           Estudante: ${usuario.eEstudante},
-           Telefone: ${usuario.telefones.join(', ')},
-           E-mail: ${usuario.emails.join(', ')}
-        ''');dart
+  // print('''${usuario.nome}, 
+  //          Idade: ${usuario.idade}, 
+  //          Estudante: ${usuario.eEstudante},
+  //          Telefone: ${usuario.telefones.join(', ')},
+  //          E-mail: ${usuario.emails.join(', ')}
+  //       ''');
            
   // Converter o objeto Usuario de volta para JSON
   String jsonSaida = jsonEncode(usuario.paraJson());
