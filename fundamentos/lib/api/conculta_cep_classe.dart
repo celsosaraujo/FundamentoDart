@@ -15,7 +15,7 @@ class Endereco {
   String ibge;
   String gia;
   String ddd;
-  String siafi;
+  String siafi; 
 
   Endereco(
       {required this.cep,
