@@ -26,6 +26,9 @@ void main(List<String> args) async {
   // if (cep != null && cep.isNotEmpty) {
   try {
     Endereco endereco = await controller.buscarEndereco(validaCEP(cep));
+    if(endereco == null) {
+      throw Exception("Não retornou nenhum endereço!");
+    }
     print("Logradouro: ${endereco.logradouro}");
     print("Bairro: ${endereco.bairro}");
     print("Cidade: ${endereco.localidade}");
